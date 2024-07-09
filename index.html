@@ -3,6 +3,7 @@
 <head>
     <!-- Meta Definitions -->
     <meta charset="UTF-8">
+    <!-- Define the viewport for better responsive behavior -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Title of the Webpage -->
@@ -40,7 +41,7 @@
         /* Heading Styles */
         h4 {
             color: #2AA9DF;
-            font-size: 20px;
+            font-size: 24px;
             font-weight: 400;
             word-spacing: normal;
             letter-spacing: normal;
@@ -50,7 +51,7 @@
         /* Paragraph Styles */
         p {
             color: #212529;
-            font-size: 16px;
+            font-size: 20px;
             font-weight: 400;
             word-spacing: normal;
             letter-spacing: normal;
@@ -65,34 +66,61 @@
 
         /* Mobile Devices */
         @media screen and (max-device-width: 480px) {
-        
+            
+            /* Heading Styles */
+            h4 {
+                font-size: 18px;
+            }
+
+            /* Paragraph Styles */
+            p {
+                font-size: 14px;
+            }
         }
 
         /* Tablet Devices */
         @media screen and (min-device-width: 481px) and (max-device-width: 768px) {
-        
+
+            /* Heading Styles */
+            h4 {
+                font-size: 20px;
+            }
+
+            /* Paragraph Styles */
+            p {
+                font-size: 16px;
+            }
         }
 
         /* Small Screens Devices, Laptops */
         @media screen and (min-device-width: 769px) and (max-device-width: 991px) {
-        
+            
+            /* Heading Styles */
+            h4 {
+                font-size: 22px;
+            }
+
+            /* Paragraph Styles */
+            p {
+                font-size: 18px;
+            }
         }
 
         /* Large Screens Devices & Desktops */
         @media screen and (min-device-width: 992px) and (max-device-width: 1024px) {
-        
+            /* No value for Large Screen Devices and Desktops */
         }
     </style>
 </head>
 <body>
     <!-- Main Content -->
-    <h4>You will be redirected in <span id='seconds' aria-live='polite'>10</span> seconds...</h4>
+    <h4>You will be redirected in <span id='seconds' aria-live='polite'>5</span> seconds...</h4>
     <p>If you are not redirected, <a href='#' rel='noopener noreferrer' title='Redirect'>click here</a>.</p>
 
     <!-- Redirect Script -->
     <script>
         // Initialize countdown seconds
-        let seconds = 10;
+        let seconds = 5;
         
         // Function to handle the page redirection
         const redirectPage = () => {
